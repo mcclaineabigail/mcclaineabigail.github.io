@@ -22,32 +22,69 @@
 .main {
     display: grid;
     grid-template-columns: 2fr 3fr;
+    margin-bottom: 5rem;
+}
+
+.photo {
+    object-fit: fill;
 }
 
 .info {
     display: grid;
     grid-template-rows: 2fr 1fr;
-    padding: 1rem;
+    padding: 10px;
 }
 
-.center-title {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+.about {
+    display: grid;
+    justify-self: center;
+}
+
+h2 {
+    padding-bottom: 2rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 40px;
+}
+
+.VirtualPet {
+    grid-column: 1 / span 1;
+    padding-right: 20px;
+}
+
+.VirtualPetPhoto {
+    grid-column: 2 / span 2;
+}
+
+.FizzBuzzPhoto {
+    grid-column: 1 / span 2;
+}
+
+.FizzBuzz {
+    grid-column: 3 / span 1;
+    padding-left: 20px;
+}
+
+.PatchWork {
+    grid-column: 1 / span 1;
+    padding-right: 20px;
+}
+
+.PatchWorkPhoto {
+    grid-column: 2 / span 2;
 }
 
 .contact-info {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
-.photo {
+img {
     width: 100%;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
