@@ -1,0 +1,43 @@
+img {
+    border-radius: 20px;
+}
+
+.title {
+    background-color: slateblue;
+}
+
+.photo {
+    background-color: red;
+}
+
+.info {
+    background-color: orange;
+}
+
+.about-me {
+    background-color: salmon;
+}
+
+.skills {
+    background-color: sienna;
+}
+
+.contact {
+    background-color: teal;
+}
+
+.project1 {
+    background-color: wheat;
+}
+
+.project2 {
+    background-color: yellowgreen;
+}
+
+.project3 {
+    background-color: turquoise;
+}
+
+.footer {
+    background-color: violet;
+}
