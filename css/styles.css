@@ -1,43 +1,28 @@
-img {
-    border-radius: 20px;
+body {
+    background-image: url(./images/Leaves.jpg);
+    color: beige;
 }
 
-.title {
-    background-color: slateblue;
-}
-
-.photo {
-    background-color: red;
+:root {
+    --background: rgba(0, 0, 0, 0.473);
 }
 
 .info {
-    background-color: orange;
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 25px;
 }
 
-.about-me {
-    background-color: salmon;
+.project-info {
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 25px;
+    padding: 20px;
 }
 
-.skills {
-    background-color: sienna;
+a {
+    text-decoration: none;
+    color: beige;
 }
 
-.contact {
-    background-color: teal;
-}
-
-.project1 {
-    background-color: wheat;
-}
-
-.project2 {
-    background-color: yellowgreen;
-}
-
-.project3 {
-    background-color: turquoise;
-}
-
-.footer {
-    background-color: violet;
+a:hover {
+    background-color: cornflowerblue;
 }
