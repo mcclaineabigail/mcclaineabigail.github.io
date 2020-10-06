@@ -10,13 +10,13 @@ body {
 }
 
 .info {
-    background-color: rgba(0, 0, 0, 0.637);
-    border-radius: 25px;
+    background-color: var(--background);
+    border-radius: 30px;
 }
 
-.project-info {
-    background-color: rgba(0, 0, 0, 0.637);
-    border-radius: 25px;
+.package {
+    background-color: var(--background);
+    border-radius: 30px;
     padding: 20px;
 }
 
@@ -26,5 +26,5 @@ a {
 }
 
 a:hover {
-    background-color: cornflowerblue;
+    background-color: rgb(53, 114, 91);
 }

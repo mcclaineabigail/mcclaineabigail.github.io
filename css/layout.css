@@ -40,12 +40,14 @@ a {
 
 .photo {
     object-fit: fill;
+    border-color: darkgreen;
+    border-radius: 10px;
 }
 
 .info {
     display: grid;
     grid-template-rows: 2fr 1fr;
-    padding: 20px;
+    padding: 30px;
 }
 
 .about {
@@ -55,6 +57,7 @@ a {
 
 h2 {
     padding-bottom: 2rem;
+    place-self: center;
 }
 
 .projects {
@@ -66,7 +69,7 @@ h2 {
 
 .VirtualPet {
     grid-column: 1 / span 1;
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .VirtualPetPhoto {
@@ -79,12 +82,12 @@ h2 {
 
 .FizzBuzz {
     grid-column: 3 / span 1;
-    padding-left: 20px;
+    margin-left: 20px;
 }
 
 .PatchWork {
     grid-column: 1 / span 1;
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .PatchWorkPhoto {
