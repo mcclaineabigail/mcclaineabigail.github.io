@@ -6,11 +6,12 @@
 
 .container {
     display: grid;
-    grid-template-rows: 150px auto;
+    grid-template-rows: 200px auto;
     margin: 0px auto;
     max-width: 1000px;
     width: 90%;
     height: 100vh;
+    justify-content: center;
 }
 
 .header {
@@ -56,7 +57,7 @@ a {
 }
 
 h2 {
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
     place-self: center;
 }
 
@@ -67,17 +68,14 @@ h2 {
     row-gap: 40px;
 }
 
-.VirtualPet {
+.project-title {
+    margin-bottom: 10px;
+}
+
+.VirtualPet,
+.PatchWork {
     grid-column: 1 / span 1;
     margin-right: 20px;
-}
-
-.VirtualPetPhoto {
-    grid-column: 2 / span 2;
-}
-
-.FizzBuzzPhoto {
-    grid-column: 1 / span 2;
 }
 
 .FizzBuzz {
@@ -85,22 +83,39 @@ h2 {
     margin-left: 20px;
 }
 
-.PatchWork {
-    grid-column: 1 / span 1;
-    margin-right: 20px;
-}
-
+.VirtualPetPhoto,
 .PatchWorkPhoto {
     grid-column: 2 / span 2;
 }
 
-.contact-info {
-    display: flex;
-    justify-content: space-between;
+.FizzBuzzPhoto {
+    grid-column: 1 / span 2;
+}
+
+.project-photos {
+    border-radius: 10px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 5rem;
     margin-top: 5rem;
+    column-gap: 10%;
+}
+
+.icon {
+    width: 40%;
+    justify-self: center;
 }
 
 img {
     width: 100%;
+}
+
+h1 {
+    font-size: 300%;
 }

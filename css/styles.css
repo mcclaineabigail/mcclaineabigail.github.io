@@ -1,28 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 body {
     background-image: url(./images/Leaves.jpg);
     color: beige;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lora', sans-serif;
 }
 
 :root {
-    --background: rgba(0, 0, 0, 0.473);
+    --background: #12180fbd;
 }
 
-.info {
+h1 {
+    border-bottom: 10px dotted beige;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.info,
+.package,
+.project-photos {
     background-color: var(--background);
     border-radius: 30px;
 }
 
-.package {
+.Projects {
     background-color: var(--background);
-    border-radius: 30px;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 a {
     text-decoration: none;
     color: beige;
+}
+
+.photo {
+    border-radius: 50%;
 }
 
 a:hover {

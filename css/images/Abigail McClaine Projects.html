@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5501/projects.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abigail McClaine Projects</title>
+    <link rel="stylesheet" href="./Abigail McClaine Projects_files/layout.css">
+    <link rel="stylesheet" href="./Abigail McClaine Projects_files/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="page-title">Abigail McClaine</h1>
+            <a href="http://127.0.0.1:5501/index.html">●◄ Portfolio Main Page ►●</a>
+        </header>
+
+
+
+
+        <h2 class="Projects">Projects</h2>
+        <section class="projects">
+            <article class="VirtualPet package">
+                <h3>VirtualPet
+                </h3>
+                <p class="project-info">A console application that is similar to the Tamagotchi digital handheld pet. In this application you are able to choose between organic or natural cats or dogs to fill your shleter. In the shelter, you can care for the animals as a group
+                    or give them individual attention. <br>Technology Used: Java
+                </p>
+            </article>
+
+            <figure class="VirtualPetPhoto">
+                <a href="https://github.com/mcclaineabigail/VirtualPet"><img src="./Abigail McClaine Projects_files/VirtualPet.png" alt="Photo"> </a>
+            </figure>
+            <figure class="FizzBuzzPhoto">
+                <a href="https://github.com/mcclaineabigail/fizz-buzz"><img src="./Abigail McClaine Projects_files/FizzBuzz.png" alt="Photo"></a>
+            </figure>
+
+            <article class="FizzBuzz package">
+                <h3>FizzBuzz
+                </h3>
+                <p class="project-info"> A play on the childhood game, the FizzBuss Application predicts how a number will follow the rules of the game FizzBuzz. Multiples of 3 return Fizz, multiples of 5 return Buzz, and multiples of both return FizzBuzz! <br>Technology Used:
+                    Java
+                </p>
+            </article>
+
+            <article class="PatchWork package">
+                <h3>PatchWork
+                </h3>
+                <p class="project-info"> Placeholder to be replaced when a better project is uploaded.
+                    <br>Technology Used: Java
+                </p>
+            </article>
+
+            <figure class="PatchWorkPhoto">
+                <a href="https://github.com/mcclaineabigail/patchwork"><img src="./Abigail McClaine Projects_files/PatchWork.png" alt="Photo"></a>
+            </figure>
+
+        </section>
+
+        <footer class="contact">
+            <aside class="contact-info">
+                <a href="https://www.linkedin.com/in/abigail-mcclaine-b9554b116/"> <img src="./Abigail McClaine Projects_files/Linkdin.png" alt="Linkedin"></a>
+                <a href="mailto:mcclaineabigail@gmail.com"><img src="./Abigail McClaine Projects_files/Gmail.png" alt="Gmail"></a>
+                <a href="https://github.com/mcclaineabigail?tab=repositories"> <img src="./Abigail McClaine Projects_files/GitHub.png" alt="GitHub"></a>
+            </aside>
+        </footer>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
