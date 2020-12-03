@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=" stylesheet " href="./src/css/layout.css">
+    <link rel="stylesheet " href="./src/css/styles.css">
+</head>
+
+<body class="container">
+    <div class="left">
+        <h2 class="left-title">Character Information</h2>
+        <section id="character-info-outer">
+            <div id="character-name"></div>
+            <div id="character-alignment"></div>
+            <div id="character-race"></div>
+            <div id="character-sub-race"></div>
+            <div id="character-class"></div>
+            <div id="character-sub-class"></div>
+        </section>
+        <button id="submit-character">Submit Character Info</button>
+
+        <section class="character-stats">
+            <div id="hit-points"></div>
+            <div id="armor-score"></div>
+            <div id="level-score"></div>
+            <div id="level-up"></div>
+        </section>
+
+        <section class="abilities">
+            <p class="ability" id="ability">Ability</p>
+            <p class="ability" id="ability-score">Score</p>
+            <p class="ability" id="ability-modifier">Modifier</p>
+            <p class="ability" id="stregth">Strength</p>
+            <p class="ability" id="strength-score"></p>
+            <p class="ability" id="strength-modifier"></p>
+            <p class="ability" id="dexterity">Dexterity</p>
+            <p class="ability" id="dexterity-score"></p>
+            <p class="ability" id="dexterity-modifier"></p>
+            <p class="ability" id="constitution">Constitution</p>
+            <p class="ability" id="constitution-score"></p>
+            <p class="ability" id="constitution-modifier"></p>
+            <p class="ability" id="wisdom">Wisdom</p>
+            <p class="ability" id="wisdom-score"></p>
+            <p class="ability" id="wisdom-modifier"></p>
+            <p class="ability" id="intelligence">Intelligence</p>
+            <p class="ability" id="intelligence-score"></p>
+            <p class="ability" id="intelligence-modifier"></p>
+            <p class="ability" id="charisma">Charisma</p>
+            <p class="ability" id="charisma-score"></p>
+            <p class="ability" id="charisma-modifier"></p>
+        </section>
+    </div>
+    <div class="right">
+        <h2 class="right-title">Combat</h2>
+        <figure id="die">
+            <button id="d20" class="dice-button">20</button>
+            <button id="d12" class="dice-button">12</button>
+            <button id="d10" class="dice-button">10</button>
+            <button id="d8" class="dice-button">8</button>
+            <button id="d6" class="dice-button">6</button>
+            <button id="d4" class="dice-button">4</button>
+        </figure>
+        <div id="battle-characters">
+            <button id="initiate-battle">Initiate Battle</button>
+            <div id="battle-left" class="battle">
+                <p id="hero-name">Character</p>
+                <p id="hero-hit-points">Hit Points:</p>
+                <p id="hero-armor">Armor Score:</p>
+            </div>
+            <div id="battle-right" class="battle">
+                <p id="enemy-name">
+                    <!-- <button id="enemy-input-button"></button> -->
+                </p>
+                <p id="enemy-hit-points"></p>
+                <p id="enemy-armor"></p>
+            </div>
+            <div id="damage-button"><input type="text" id="character-damaged" placeholder="Points">
+                <button id="take-damage">Take Damage</button></div>
+            <div id="attack-button"><input type="text" id="character-attack" placeholder="Points">
+                <button id="deal-damage">Deal Damage</button></div>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="./src/js/app.js" type="module"></script>
+</body>
+
+</html>
