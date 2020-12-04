@@ -1,13 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
-body {
-    background-image: url(./images/Leaves.jpg);
-    color: beige;
-    font-family: 'Lora', sans-serif;
+:root {
+    --font-color: rgb(24, 19, 7);
+    --light-font: #cfc8b7;
+    --background: #d3a646a4;
+    --darkBackground: #49370fc5;
+    --light-background: #d6d4d0;
 }
 
-:root {
-    --background: #12180fbd;
+body {
+    background-size: cover;
+    color: var(--font-color);
+    font-family: 'Lora', sans-serif;
+    font-size: larger;
+}
+
+.project-header {
+    background-image: url("./images/peaches-header.jpg");
+    background-size: cover;
+}
+
+.home {
+    background-image: url(./images/peaches.jpg);
+}
+
+.project-home {
+    /* background-color: var(--light-background); */
+    background-image: linear-gradient(to right, #d4c6aa, #866a2da4);
 }
 
 .red {
@@ -15,9 +34,13 @@ body {
 }
 
 h1 {
-    border-bottom: 10px dotted beige;
+    border-bottom: 10px dotted var(--font-color);
     padding-bottom: 10px;
     margin-bottom: 10px;
+}
+
+.project-page-title {
+    text-shadow: 0 0 5px #ffffff;
 }
 
 .info,
@@ -35,7 +58,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: beige;
+    color: var(--font-color);
 }
 
 .photo {
@@ -43,5 +66,7 @@ a {
 }
 
 a:hover {
-    background-color: rgb(53, 114, 91);
+    background-color: var(--darkBackground);
+    border-radius: 30px;
+    color: var(--light-font);
 }

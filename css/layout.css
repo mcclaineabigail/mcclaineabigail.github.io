@@ -14,6 +14,24 @@
     justify-content: center;
 }
 
+.project-container {
+    display: grid;
+    grid-template-rows: 200px auto 200px;
+    margin: 0px auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.project-section {
+    display: grid;
+    grid-template-rows: 200px auto;
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 90%;
+    height: 100vh;
+    justify-content: center;
+}
+
 .header {
     display: grid;
     justify-content: space-evenly;
@@ -34,9 +52,9 @@ a {
 
 .main {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 3fr 2fr;
     margin-bottom: 5rem;
-    column-gap: 30px;
+    column-gap: 200px;
 }
 
 .photo {
@@ -70,6 +88,12 @@ h2 {
 
 .project-title {
     margin-bottom: 10px;
+}
+
+.package {
+    padding: 10px;
+    display: grid;
+    align-content: center;
 }
 
 .text1,
