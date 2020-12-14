@@ -4,7 +4,7 @@
     max-width: 1200px;
 }
 
-.abilities {
+#abilities {
     display: grid;
     grid-template-columns: repeat(3, 100px);
 }

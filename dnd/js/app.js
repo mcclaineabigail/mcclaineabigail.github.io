@@ -22,6 +22,8 @@ import {
 
 let character = new Character
 
+document.getElementById("abilities").style.visibility = "hidden"
+
 let characterInfo = document.getElementById('character-info-outer')
 characterInfo.appendChild(createCharacterInput());
 
@@ -33,6 +35,11 @@ submitCharacterButton.addEventListener("click", () =>
     updateStaticStats(character),
     determineAbilities(character)
 );
+
+submitCharacterButton.onclick = function() {
+    document.getElementById("abilities").style.visibility = "visable"
+    console.log("hello")
+}
 
 
 

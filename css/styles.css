@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 :root {
     --font-color: rgb(24, 19, 7);
-    --light-font: #cfc8b7;
-    --background: #d3a646a4;
+    --light-font: #ecd9ce;
+    --background: #ebb36ba4;
     --darkBackground: #49370fc5;
-    --light-background: #d6d4d0;
+    --light-background: #eff2f3;
+    --peach: rgb(218, 174, 156);
+    --magenta: rgb(82, 6, 6);
 }
 
 body {
@@ -25,8 +27,7 @@ body {
 }
 
 .project-home {
-    /* background-color: var(--light-background); */
-    background-image: linear-gradient(to right, #d4c6aa, #866a2da4);
+    background-image: linear-gradient(to right, #f0e4ae, rgb(218, 156, 161));
 }
 
 .red {
@@ -43,17 +44,28 @@ h1 {
     text-shadow: 0 0 5px #ffffff;
 }
 
-.info,
-.package,
-.project-photos {
-    background-color: var(--background);
+.info {
+    background-color: var(--peach);
     border-radius: 30px;
 }
 
+.package {
+    background-color: var(--light-background);
+    border-radius: 30px;
+}
+
+.project-photos {
+    justify-items: center;
+}
+
 .Projects {
-    background-color: var(--background);
     padding: 10px;
     border-radius: 5px;
+}
+
+.project-info {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 a {
@@ -66,7 +78,11 @@ a {
 }
 
 a:hover {
-    background-color: var(--darkBackground);
+    background-color: var(--peach);
     border-radius: 30px;
-    color: var(--light-font);
+    color: var(--magenta;
+}
+
+.icon {
+    text-shadow: 1px 1px;
 }
