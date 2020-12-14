@@ -27,3 +27,11 @@
     background: url(./d4.png);
     background-size: cover;
 }
+
+.character-stats {
+    display: none;
+}
+
+#abilities {
+    visibility: hidden;
+}

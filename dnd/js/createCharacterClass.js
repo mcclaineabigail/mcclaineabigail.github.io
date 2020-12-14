@@ -8,9 +8,12 @@ const createCharacterInput = function() {
     alignmentSection.id = "character-alignment-box"
     let raceSection = document.createElement("div")
     raceSection.id = "character-race-box"
+    let classSection = document.createElement("div")
+    classSection.id = "character-class-box"
     characterInfo.appendChild(nameSection)
     characterInfo.appendChild(alignmentSection)
     characterInfo.appendChild(raceSection)
+    characterInfo.appendChild(classSection)
 
     let addNameLabel = document.createElement("label");
     addNameLabel.for = "name-input";
@@ -41,7 +44,6 @@ const createCharacterInput = function() {
     let chooseNeutralGood = document.createElement("option")
     chooseNeutralGood.value = "Neutral Good"
     chooseNeutralGood.innerText = "Neutral Good"
-
     let chooseChaoticNeutral = document.createElement("option")
     chooseChaoticNeutral.value = "Chaotic Neutral"
     chooseChaoticNeutral.innerText = "Chaotic Neutral"
@@ -128,7 +130,6 @@ const createCharacterInput = function() {
     chooseSubRace.disabled = true;
     chooseSubRace.selected = true;
     chooseSubRace.innerText = "Choose Sub-Race"
-
     let chooseNone = document.createElement("option")
     chooseNone.value = ""
     chooseNone.innerText = "None"
@@ -153,15 +154,13 @@ const createCharacterInput = function() {
     let chooselightfoot = document.createElement("option")
     chooselightfoot.value = "- Lightfoot"
     chooselightfoot.innerText = "Halfling - Lightfoot"
-
     let choosestout = document.createElement("option")
     choosestout.value = "- Stout"
     choosestout.innerText = "Halfling - Stout"
 
-
-
     raceSection.appendChild(addSubRaceLabel)
     raceSection.appendChild(addSubRaceSelect)
+    addSubRaceSelect.appendChild(chooseSubRace)
     addSubRaceSelect.appendChild(chooseNone)
     addSubRaceSelect.appendChild(chooseHillDwarf)
     addSubRaceSelect.appendChild(chooseHillDwarf)
@@ -175,10 +174,72 @@ const createCharacterInput = function() {
 
 
 
+    let addClassLabel = document.createElement("label");
+    addClassLabel.for = "class-input";
+    let addClassSelect = document.createElement("select")
+    addClassSelect.id = "class-input"
+    let chooseClass = document.createElement("option")
+    chooseClass.value = ""
+    chooseClass.disabled = true;
+    chooseClass.selected = true;
+    chooseClass.innerText = "Choose Class"
+    let chooseBarbarian = document.createElement("option")
+    chooseBarbarian.value = "Barbarian"
+    chooseBarbarian.innerText = "Barbarian"
+    let chooseBard = document.createElement("option")
+    chooseBard.value = "Bard"
+    chooseBard.innerText = "Bard"
+    let chooseCleric = document.createElement("option")
+    chooseCleric.value = "Cleric"
+    chooseCleric.innerText = "Cleric"
+    let chooseDruid = document.createElement("option")
+    chooseDruid.value = "Druid"
+    chooseDruid.innerText = "Druid"
+    let chooseFighter = document.createElement("option")
+    chooseFighter.value = "Fighter"
+    chooseFighter.innerText = "Fighter"
+    let chooseMonk = document.createElement("option")
+    chooseMonk.value = "Monk"
+    chooseMonk.innerText = "Monk"
+    let choosePaladin = document.createElement("option")
+    choosePaladin.value = "Paladin"
+    choosePaladin.innerText = "Paladin"
+    let chooseRanger = document.createElement("option")
+    chooseRanger.value = "Ranger"
+    chooseRanger.innerText = "Ranger"
+    let chooseRogue = document.createElement("option")
+    chooseRogue.value = "Rogue"
+    chooseRogue.innerText = "Rogue"
+    let chooseSorcerer = document.createElement("option")
+    chooseSorcerer.value = "Sorcerer"
+    chooseSorcerer.innerText = "Sorcerer"
+    let chooseWarlock = document.createElement("option")
+    chooseWarlock.value = "Warlock"
+    chooseWarlock.innerText = "Warlock"
+    let chooseWizard = document.createElement("option")
+    chooseWizard.value = "Wizard"
+    chooseWizard.innerText = "Wizard"
+
+    classSection.appendChild(addClassLabel)
+    classSection.appendChild(addClassSelect)
+    addClassSelect.appendChild(chooseClass)
+    addClassSelect.appendChild(chooseBarbarian)
+    addClassSelect.appendChild(chooseBard)
+    addClassSelect.appendChild(chooseCleric)
+    addClassSelect.appendChild(chooseDruid)
+    addClassSelect.appendChild(chooseFighter)
+    addClassSelect.appendChild(chooseMonk)
+    addClassSelect.appendChild(choosePaladin)
+    addClassSelect.appendChild(chooseRanger)
+    addClassSelect.appendChild(chooseRogue)
+    addClassSelect.appendChild(chooseSorcerer)
+    addClassSelect.appendChild(chooseWarlock)
+    addClassSelect.appendChild(chooseWizard)
+
     return characterInfo;
 }
 
-const updateInputFromFields = function(character) {
+let updateInputFromFields = function(character) {
     let button = document.getElementById("submit-character")
     let characterInfo = document.getElementById('character-info-outer')
 
@@ -191,20 +252,25 @@ const updateInputFromFields = function(character) {
     let alignment = document.getElementById("alignment-input").value;
     let race = document.getElementById("race-input").value;
     let subRace = document.getElementById("sub-race-input").value;
+    let cclass = document.getElementById("class-input")
 
     character.setName(name);
     character.setAlignment(alignment);
     character.setRace(race);
     character.setSubRace(subRace)
+    character.setClass(cclass)
 
-    nameSection.innerText = `Character Name: ${character.getName()}`;
-    alignmentSection.innerText = `Character Alignment: ${character.getAlignment()}`;
-    raceSection.innerText = `Character Race: ${character.getRace()} ${character.getSubRace()}`;
+    nameSection.innerText = `Name: ${character.getName()}`;
+    alignmentSection.innerText = `Alignment: ${character.getAlignment()}`;
+    raceSection.innerText = `Race: ${character.getRace()} ${character.getSubRace()}`;
+    classSection.innerText = `Class: ${character.getClass()}`
     characterInfo.removeChild(characterInfo.lastChild);
     button.remove();
 
     let heroName = document.getElementById("hero-name")
     heroName.innerText = character.getName();
+
+
 
 }
 
